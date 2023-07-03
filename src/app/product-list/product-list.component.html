@@ -1,0 +1,37 @@
+<div class="mat-elevation-z8">
+    <mat-table [dataSource]="dataSource" matSort (matSortChange)="announceSortChange($event)">
+      <ng-container matColumnDef="id">
+        <mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by number"> ID </mat-header-cell>
+        <mat-cell *matCellDef="let row"> {{ row.id }} </mat-cell>
+      </ng-container>
+  
+      <ng-container matColumnDef="title">
+        <mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by name">Title</mat-header-cell>
+        <mat-cell *matCellDef="let row">{{ row.title }}</mat-cell>
+      </ng-container>
+  
+      <ng-container matColumnDef="category">
+        <mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by name">Category</mat-header-cell>
+        <mat-cell *matCellDef="let row">{{ row.category }}</mat-cell>
+      </ng-container>
+  
+      <ng-container matColumnDef="description">
+        <mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by name">Description</mat-header-cell>
+        <mat-cell *matCellDef="let row">{{ row.description }}</mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="image">
+        <mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by name">Image</mat-header-cell>
+        <mat-cell *matCellDef="let row"><img [src]="row.image" alt="Product Image" width="100" height="100"></mat-cell>
+      </ng-container>
+      
+      <ng-container matColumnDef="price">
+        <mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by number"> Price </mat-header-cell>
+        <mat-cell *matCellDef="let row"> {{ row.price }}<button mat-button color = 'primary' (click)="openEditModal(row)">edit</button> </mat-cell>
+      </ng-container>
+      <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+      <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+    </mat-table>
+    <mat-paginator [pageSizeOptions]="[5, 10, 20]" [pageSize]="5" showFirstLastButtons ></mat-paginator>
+  </div>
+  

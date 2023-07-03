@@ -1,0 +1,14 @@
+<div class="search-container">
+    <input type="text" [(ngModel)]="searchKeyword" class="search-input" placeholder="Filter">
+    <button mat-button type="button" class="search-button" title="Search" (click)="applyFilter()">
+      <i class="fas fa-search"></i>
+    </button>
+  </div>
+  
+  
+<div class="button-container ">
+    <button mat-button routerLink="/users" routerLinkActive="active-link"  color = 'primary'>User</button>
+    <button mat-button routerLink="/products" routerLinkActive="active-link" color = 'primary'> Product</button>
+</div>
+  
+<router-outlet></router-outlet>

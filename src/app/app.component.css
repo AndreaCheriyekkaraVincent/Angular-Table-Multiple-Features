@@ -1,0 +1,14 @@
+
+
+   .button-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px; 
+  }
+  
+  .active-link {
+
+    background-color: #bd94ce;
+    color: #ffffff;
+  }
+  
