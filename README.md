@@ -1,3 +1,5 @@
+# Angular-Table-w-Multiple-Features
+Angular Table with Multiple Features
 # UserProductApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.0.
@@ -18,15 +20,21 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
+<<<<<<< HEAD
 ## Running end-to-end tests
 
 Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
+=======
+>>>>>>> origin/main
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/main
 ##Feature implementation Brief explaination
 
 1. The table is created using angular material MatTableModule.
@@ -36,4 +44,8 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 5. The table supports filtering by a search keyword entered by the user.
 6. The table supports pagination to display a limited number of rows at a time using MatPaginatorModule.
 7. The table allows users to edit and update data directly from the table by clicking on the edit button, a modal opens which can be customised according to the feilds and later post operation can be performed for the update operation using post http client , e.g., call the data service to update the user.
+<<<<<<< HEAD
 8. The table can work with different datasets and column configurations.
+=======
+8. The table can work with different datasets and column configurations.
+>>>>>>> origin/main
